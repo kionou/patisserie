@@ -1,5 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <slike/>
 </template>
+
+<script>
+import slike from '@/components/slike.vue';
+export default {
+  components:{
+    slike
+  }
+
+}
+</script>
+
+<style>
+
+</style>

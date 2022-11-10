@@ -48,13 +48,25 @@
     </div>
 
   </div>
+  <div class="container-nouvelle">
+    <div class="nouvelle">
+      <h1>Nouvelle édition de gâteaux</h1>
+      <P>
+        NOUS SUIVONS LES TENDANCES, NOUS TROUVONS L'INSPIRATION, NOUS RECHERCHONS DES COMBINAISONS UNIQUES ET NOUS AMÉLIORONS LES RECETTES EXISTANTES POUR VOUS FAIRE DÉCOUVRIR DE NOUVELLES SAVEURS.
+      </P>
+      <Slike/>
+
+    </div>
+
+  </div>
 </template>
 
 <script>
 import Navbar from '@/components/navbar.vue';
+import Slike from '@/components/slike.vue';
 export default {
   components:{
-    Navbar
+    Navbar , Slike
   }
 
 }
@@ -108,6 +120,15 @@ export default {
 .image img{
   width: 100%;
   height: 100%;
+}
+
+
+.container-nouvelle{
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  height: auto;
+  padding: 10px;
 }
 
 </style>
