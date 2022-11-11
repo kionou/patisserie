@@ -70,7 +70,7 @@ h2 {
 #navbar {
   display: flex;
   align-items: center;
-  background-color: #FA739D;
+  background-color: #2D4C49;
   width: 100%;
 
 }
