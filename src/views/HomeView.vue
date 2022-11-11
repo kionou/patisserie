@@ -131,4 +131,11 @@ export default {
   padding: 10px;
 }
 
+.nouvelle{
+  max-width: 1140px;
+  border: 1px solid black;
+  height: auto;
+  margin: 0 auto;
+}
+
 </style>

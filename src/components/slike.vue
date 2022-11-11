@@ -165,7 +165,7 @@
   
           &__img {
             margin-bottom: 1rem;
-            height: 450px;
+            height: 250px;
             object-fit: cover;
           }
   
@@ -256,5 +256,14 @@
   .fade-prev-leave-to {
     transform: translateX(100%);
     opacity: 0;
+  }
+  @media (max-width:600px) {
+    .app__body-carousel .slide__img{
+      height: 100px;
+    }
+    .app__body-carousel .icon{
+      top: 27%;
+    }
+
   }
   </style>
