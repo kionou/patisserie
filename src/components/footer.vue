@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="contact-content text-center">
-                        <a href="#"><img src="https://i.ibb.co/QDy827D/ak-logo.png" alt="logo"></a>
+                        <a href="#"><img src="@/assets/images/logo2.png" alt="logo"></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </p>
                         <div class="hr"></div>
                         <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
@@ -26,7 +26,7 @@
     <!-- =============== 1.9 Contact Area End ====================-->
     <!-- =============== 1.9 Footer Area Start ====================-->
     <footer>
-        <p>Copyright &copy; 2022 <img src="https://i.ibb.co/QDy827D/ak-logo.png" alt="logo"> All Rights Reserved.</p>
+        <p>Copyright &copy; 2022 All Rights Reserved.</p>
     </footer>
 </template>
 
@@ -43,7 +43,6 @@ img {
 }
 section {
   padding: 60px 0;
-  /* min-height: 100vh;*/
 }
 ul {
   margin: 0;
@@ -72,14 +71,14 @@ ul {
 }
 
 .contact-content h6 {
-  color: #8b9199;
+  color: var(--blanc);
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
 .contact-content span {
-  color: #353c47;
+  color: var(--blanc);
   margin: 0 10px;
 }
 
@@ -103,18 +102,18 @@ ul {
 }
 
 .contact-social ul li a:hover {
-  border: 1px solid #fab702;
-  color: #fab702;
+  border: 1px solid var(--or);
+  color: var(--or);
 }
 
 .contact-content img {
-  max-width: 210px;
+  max-width: 100px;
 }
 
 section,
 footer {
-  background: #1a1e25;
-  color: #868c96;
+  background: #1e3a37;
+  color: var(--blanc);
 }
 
 footer p {

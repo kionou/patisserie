@@ -13,7 +13,7 @@
               class="slide"
             >
               <img
-                :src="slideActive.img"
+                :src=" getImage(slideActive.img )"
                 class="slide__img"
                 alt="image"
               >
@@ -54,6 +54,7 @@
   </template>
   
   <script>
+  import {getImage} from '@/lib/getImage'
   export default {
     data() {
       return {
@@ -65,20 +66,20 @@
           carouselDatas() {
             return [
               {
-                text: 'Sed ut perspiciatis',
-                img: `https://www.president-professionnel.fr/wp-content/uploads/2021/08/eclair-pistache-fraise-800x600-1.png.webp`,
+                text: 'gâteau de détente',
+                img:`images/chill-out-cake.png`
               },
               {
-                text: 'dolor sit amet',
-                 img: `http://sweetdelight.eu/wp-content/uploads/2022/07/blueberry-red-velvet-cake.png`,
+                text: 'gâteau-au-chocolat-prague',
+                 img: `images/chocolate-cake-prague.png`,
               },
               {
-                text: 'consectetur adipiscing elit',
-                 img: `http://sweetdelight.eu/wp-content/uploads/2022/07/blueberry-red-velvet-cake.png`,
+                text: 'gâteau aux baies rouges',
+                 img: `images/berry-red-cake.png`,
               },
               {
-                text: 'sed do eiusmod',
-                 img: `http://sweetdelight.eu/wp-content/uploads/2022/07/chill-out-cake.png`,
+                text: 'gateau de stockholm',
+                 img: `images/stockholm-cake.png`,
               },
             ]
           },
@@ -93,6 +94,7 @@
           },
       },
       methods: {
+        getImage:getImage,
           nextSlide() {
             this.direction = 'next'
             this.carouselNumber++
@@ -111,6 +113,7 @@
             document.querySelector('.dot--1').style.transform = `translateX(${this.ActiveDotCoordinate})`;
             document.querySelector(`.dot--${this.carouselNumber + 1}`).style.transform = `translateX(0)`;
           },
+          
       },
   };
   </script>

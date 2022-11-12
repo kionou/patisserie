@@ -1,5 +1,5 @@
 <template>
-  <slike/>
+  
     <div class="container-nouvelle">
     <div class="nouvelle">
       <h1>NOUVELLE ÉDITION DE GÂTEAUX</h1>
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import slike from '@/components/slike.vue';
+
 export default {
   components:{
-    slike
+   
   }
 
 }
