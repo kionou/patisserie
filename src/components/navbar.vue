@@ -7,14 +7,9 @@
 
     <div class="bar-items" :class="{ hide: !show }">
       <div id="menu">
-
-
-
         <a>
           Home
         </a>
-
-
         <a>
           About
         </a>
@@ -26,7 +21,7 @@
 
 
         <a>
-          Contact Us
+          Contact 
         </a>
       </div>
     </div>

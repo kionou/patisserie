@@ -95,8 +95,7 @@ export default {
 }
 
 .container-mission{
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
   /* border: 1px solid red; */
   height: auto;
   padding: 10px;
@@ -145,8 +144,7 @@ export default {
 
 
 .container-nouvelle{
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
   border: 1px solid red;
   height: auto;
   padding: 10px;
@@ -161,7 +159,7 @@ export default {
 }
 
 .container-localisation{
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid red;
   height: 400px;
@@ -174,7 +172,6 @@ export default {
   max-width: 1140px;
   border: 1px solid black;
   height: auto;
-  margin: 0 auto;
   color: #ffffff;
 }
 
