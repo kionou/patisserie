@@ -17,7 +17,7 @@
      
     </div>
     </div>
-    <div class="content1">
+    <div class="content2">
         <div class="container">  
   <form id="contact" action="" method="post">
     <h3>Colorlib Contact Form</h3>
@@ -65,32 +65,32 @@ export default {
     justify-content: space-around;
 }
 .content1{
-    height: 100%;
     width: 500px;
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('@/assets/images/image1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.content2{
+    width: 500px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
 
-* {
-
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
 
 
 
 .container {
   max-width: 400px;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 #contact input[type="text"],
@@ -212,14 +212,9 @@ fieldset {
 
 
 .right {
-  height: 500px;
+  height: 350px;
   width: 350px;
-
-
- 
-  border-radius: 20px;
   padding: 20px;
-  left: -100px;
   background-color: var(--blanc);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -254,6 +249,33 @@ fieldset {
   padding-right: 20px;
 
 }
+
+@media only screen and (max-width: 950px) {
+  .right {
+    width: 250px;
+    left: -5px;
+    height: calc(100% + 10px);
+    border: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .tabs {
+    padding: 55px 0 0 0;
+  }
+
+  .tab {
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .tab i {
+    padding-right: 10px;
+    font-size: 16px;
+  }
+}
+
 
 
 </style>
