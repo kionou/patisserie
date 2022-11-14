@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "categorie":"Chocolat",
+        "nom":"Chocolat-vanille",
+        "image":"images/image1.jpg"
+    },
+     {
+        "id":2,
+        "categorie":"Fraise",
+        "nom":"Chocolat-fraise",
+        "image":"images/image1.jpg"
+    },
+     {
+        "id":3,
+        "categorie":"Vanille",
+        "nom":"Vanille",
+        "image":"images/image1.jpg"
+    },
+     {
+        "id":4,
+        "categorie":"Chocolat",
+        "nom":"Chocolat-vanille",
+        "image":"images/image1.jpg"
+    },
+     {
+        "id":5,
+        "categorie":"Chocolat",
+        "nom":"Chocolat-vanille",
+        "image":"images/image1.jpg"
+    }
+]

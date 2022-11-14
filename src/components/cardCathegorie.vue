@@ -1,7 +1,7 @@
 <template>
   
-                <div class="card">
-                    <p>Gateaux</p>
+                <div class="card" v-for="datas in data" :key="datas.id">
+                    <p>{{datas.categorie}}</p>
                 </div>
 
              
@@ -10,6 +10,7 @@
 
 <script>
 export default {
+    props:["data"]
 
 }
 </script>

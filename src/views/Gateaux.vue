@@ -4,11 +4,16 @@
         <div class="cathegorie">
             <h1>NOS GATEAUX</h1>
             <div class="cathegorie-card">
-                <Card v-for="(card , index) in 7" :key="index"/>
+                <CardCategorie :data="data" />
             </div>
 
         </div>
         <div class="article">
+            <div class="article-card">
+                <CardArticle :data="data"/>
+
+            </div>
+
 
         </div>
 
@@ -17,26 +22,36 @@
 </template>
 
 <script>
-import Card from '@/components/cardCathegorie.vue';
+import CardCategorie from '@/components/cardCathegorie.vue';
+import CardArticle from '@/components/cardArticle.vue';
 
 export default {
     name:'"Gateaux"',
     components:{
-        Card
+        CardCategorie , CardArticle
+    },
+    data(){
+        return{
+            data:''
+        }
+    },
+    mounted(){
+        const response = require('@/lib/gateau.json')
+        console.log("ggggg",response);
+        this.data = response
     }
 
+    
 }
 </script>
 
 <style scoped>
 .container-cathegorie{
-    border: 1px solid red;
     width: 100%;
     height: auto;
 }
 .cathegorie{
     max-width: var(--max-width);
-    border: 1px solid blue;
     margin: 0 auto;
     height: auto;
    
@@ -47,17 +62,24 @@ export default {
     margin: 0 auto;
     padding: 40px 0;
     width: 100%;
-    border: 1px solid red;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .article{
     max-width: var(--max-width);
-    border: 1px solid rgb(0, 255, 140);
     margin: 20px auto;
-    height: 20vh;
+    height: auto;
    
+}
+.article .article-card{
+    display: flex;
+    grid-gap: 26px;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
