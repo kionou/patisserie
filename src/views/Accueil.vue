@@ -25,15 +25,13 @@ export default {
                
             ],
             textes: [      
-                ` Travailler avec le sourire et sans stress, c'est sourire à l'avenir`,
-                'Un environnement motivant et inspirant',
+               
                
                 
 
             ],
             titres: [
-               'Une Pédagogie inspirée de 42',
-               'Un cadre agréable',
+              
             ]
         }
   },
