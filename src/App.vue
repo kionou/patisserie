@@ -24,7 +24,7 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,900&display=swap');
 
 :root{
-  --vert: #2D4C49;
+  --vert: #1e3a37;
   --blanc: #fff;
   --or: #c7b183;
   --noir: #000;

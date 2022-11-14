@@ -112,7 +112,7 @@ ul {
 
 section,
 footer {
-  background: #1e3a37;
+  background: #2D4C49;
   color: var(--blanc);
 }
 
