@@ -2,7 +2,7 @@
   <div class="content">
     <div class="content1">
         <div class="right">
-      <div class="right_heading">Contact Information</div>
+      <h3 class="right_heading" >Contact Information</h3>
       <div class="tabs">
         <div class="tab1 tab">
           <div class="email"><i class="fas fa-envelope"></i>info@kiranrajr.com</div>
@@ -20,27 +20,24 @@
     <div class="content2">
         <div class="container">  
   <form id="contact" action="" method="post">
-    <h3>Colorlib Contact Form</h3>
-    <h4>Contact us for custom quote</h4>
+    <h3>Formulaire de contact Baby-patisserie</h3>
+
     <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      <input placeholder="Nom" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      <input placeholder=" Addresse mail" type="email" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+      <input placeholder="Numero de téléphone" type="tel" tabindex="3" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+      <textarea placeholder="Tapez votre message ici..." tabindex="5" required></textarea>
     </fieldset>
     <fieldset>
-      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
+Soumettre</button>
     </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
   </form>
 </div>
     </div>
@@ -60,36 +57,32 @@ export default {
     max-width: var(--max-width);
     margin: 0 auto;
   
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-around;
 }
 .content1{
     width: 500px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('@/assets/images/image1.jpg') no-repeat center;
+    /* background: url('@/assets/images/image1.jpg') no-repeat center; */
     background-size: cover;
+    height: 100%;
+    margin: 0 10px;
 }
 
 .content2{
     width: 500px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-
-
-
-
-
 .container {
-  max-width: 400px;
   width: 100%;
 }
 
@@ -118,7 +111,7 @@ export default {
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
-  font-size: 13px;
+
   font-weight: 400;
 }
 
@@ -133,11 +126,10 @@ fieldset {
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
-#contact input[type="url"],
 #contact textarea {
   width: 100%;
   border: 1px solid #ccc;
-  background: #FFF;
+  background: var(--blanc);
   margin: 0 0 5px;
   padding: 10px;
 }
@@ -145,7 +137,6 @@ fieldset {
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
 #contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
@@ -163,27 +154,23 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
-  color: #FFF;
+  background: var(--vert);
+  color: var(--blanc);
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+ background-color: var(--blanc);
+ color: var(--vert);
+ border: 1px solid var(--vert);
 }
 
 #contact button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.copyright {
-  text-align: center;
-}
 
 #contact input:focus,
 #contact textarea:focus {
@@ -207,31 +194,28 @@ fieldset {
   color: #888;
 }
 
-
-
-
-
 .right {
-  height: 350px;
-  width: 350px;
+  /* height: 350px;
+  width: 350px; */
   padding: 20px;
   background-color: var(--blanc);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-  border: 5px solid var(--vert);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ 
+  /* border: 5px solid var(--vert); */
   color: var(--blanc);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 }
 
 .right_heading {
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: var(--vert);
-  margin-top: 10px;
-}
-
+  display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: black;
+  }
 .tabs {
   padding: 30px 20px 0;
 }
@@ -251,15 +235,15 @@ fieldset {
 }
 
 @media only screen and (max-width: 950px) {
-  .right {
+  /* .right {
     width: 250px;
     left: -5px;
     height: calc(100% + 10px);
     border: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-  }
-
+  } */
+/* 
   .tabs {
     padding: 55px 0 0 0;
   }
@@ -273,7 +257,19 @@ fieldset {
   .tab i {
     padding-right: 10px;
     font-size: 16px;
+  } */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .content{
+    flex-direction: column-reverse;
   }
+  .content1 , .content2{
+    width: 100%;
+    padding: 10px 0;
+  }
+
 }
 
 
